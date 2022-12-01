@@ -1,0 +1,19 @@
+<!DOCTYPE html >
+<html lang="ru">
+<head>
+<title>Супер заголовок</title>
+<meta http-equiv="content-type" content="text/html; charset=cp-1251" />
+<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="mainPage">
+    {% include "snippets/header.html" %}
+    <div id="header"></div>
+    <div id="gutter"></div>
+    {% block content %} {% endblock %}
+    {% include "snippets/bottom.html" %}
+    <div class="clear">&nbsp;</div>
+    {% include "snippets/footer.html" %}
+  </div>
+</body>
+</html>
