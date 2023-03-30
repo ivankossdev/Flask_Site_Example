@@ -14,5 +14,6 @@ def price():
 def work():
     return render_template('work.html')
 
+
 if __name__ == '__main__':
     app.run()
