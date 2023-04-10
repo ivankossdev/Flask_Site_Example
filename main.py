@@ -6,9 +6,11 @@ from flask import render_template
 def home():
     return render_template('index.html')
 
+
 @app.route('/price')
 def price():
     return render_template('price.html')
+
 
 @app.route('/work')
 def work():
